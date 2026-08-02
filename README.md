@@ -51,13 +51,11 @@ Draft state and wishlist are saved in the browser using localStorage.
 - Selecting a suggestion adds the exact matching player.
 
 
-## Version 3.4
-- Moved Draft Radar / Decision Center label into the upper-right blue command bar.
-- Removed the redundant right-panel header to create more vertical room.
-
-
-## Version 3.6 Stable
-- Restored the Version 3.4 Decision Center and Radar rendering.
-- Added isolated Yes/No confirmation dialogs for Undo and Reset.
-- Undo returns the player to Available Players and restores the wishlist entry when applicable.
-- No changes were made to recommendation, radar, market-watch, or projected-return rendering.
+## Version 3.7 — Decision Center Rollback
+- Restored the last stable Version 3.3 Decision Center and Radar layout.
+- Restored the original right-panel header and positioning.
+- Removed the later blue-header relocation.
+- Removed the later custom Undo/Reset confirmation changes.
+- Preserved wishlist autocomplete.
+- Preserved automatic wishlist removal when a player is drafted.
+- Preserved safe heart-button player references.
