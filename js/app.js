@@ -78,6 +78,39 @@ function addWishlistFromAvailableIndex(index){
   if(!player)return;
   addWishlistByName(player.name);
 }
+function wishlistMatches(query){
+  const normalized=normalizePlayerName(query);
+  if(!normalized)return [];
+  return state.available
+    .map((player,index)=>({player,index}))
+    .filter(({player})=>normalizePlayerName(player.name).includes(normalized))
+    .slice(0,8);
+}
+function renderWishlistSuggestions(query){
+  const box=document.getElementById('wishlistSuggestions');
+  if(!box)return;
+  const matches=wishlistMatches(query);
+  if(!matches.length){box.innerHTML='';box.classList.remove('open');return;}
+  box.innerHTML=matches.map(({player,index})=>`<button type="button" class="wishlist-suggestion" onclick="selectWishlistSuggestion(${index})"><span class="wishlist-suggestion-name">${player.name}</span><span class="wishlist-suggestion-meta"><span class="pos ${player.pos}">${player.pos}</span> ${player.team||'—'} · ADP ${player.rank}</span></button>`).join('');
+  box.classList.add('open');
+}
+function onWishlistInput(value){renderWishlistSuggestions(value)}
+function selectWishlistSuggestion(index){
+  const player=state.available[Number(index)];
+  if(!player)return;
+  addWishlistByName(player.name);
+}
+function handleWishlistKey(event){
+  if(event.key==='Enter'){
+    event.preventDefault();
+    const first=wishlistMatches(event.currentTarget.value)[0];
+    if(first)selectWishlistSuggestion(first.index);
+  }
+  if(event.key==='Escape'){
+    const box=document.getElementById('wishlistSuggestions');
+    if(box){box.innerHTML='';box.classList.remove('open')}
+  }
+}
 function removeWishlist(name){
   state.wishlist=state.wishlist.filter(x=>x.name!==name);
   save();render();
@@ -91,7 +124,7 @@ function renderWishlist(){
     return `<div class="wishlist-wrap"><div class="wishlist-card"><div class="wishlist-head"><span>MY WISHLIST</span><div class="wishlist-actions"><button class="primary" onclick="toggleWishlist()">Show</button></div></div><div class="wishlist-hidden">WISHLIST HIDDEN<div class="wishlist-hint">Press H to show</div></div></div></div>`;
   }
   let items=state.wishlist.length?state.wishlist.map((x,i)=>`<div class="wishlist-item"><div class="wishlist-rank">${i+1}</div><div class="wishlist-name">${x.name}<div class="sub">${x.pos||''}${x.team?' · '+x.team:''}${x.rank&&x.rank<999?' · ADP '+x.rank:''}</div></div><button class="wishlist-remove" title="Remove" onclick='removeWishlist(${JSON.stringify(x.name)})'>×</button></div>`).join(''):`<div class="small">No players added yet.</div>`;
-  return `<div class="wishlist-wrap"><div class="wishlist-card"><div class="wishlist-head"><span>MY WISHLIST</span><div class="wishlist-actions"><button onclick="toggleWishlist()">Hide</button></div></div><div class="wishlist-body"><div class="wishlist-add"><input id="wishlistInput" placeholder="Add player" onkeydown="if(event.key==='Enter')addWishlistByName(this.value)"><button class="primary" onclick="addWishlistByName(document.getElementById('wishlistInput').value)">Add</button></div>${items}</div></div></div>`;
+  return `<div class="wishlist-wrap"><div class="wishlist-card"><div class="wishlist-head"><span>MY WISHLIST</span><div class="wishlist-actions"><button onclick="toggleWishlist()">Hide</button></div></div><div class="wishlist-body"><div class="wishlist-add"><div class="wishlist-search-shell"><input id="wishlistInput" autocomplete="off" placeholder="Search available players" oninput="onWishlistInput(this.value)" onfocus="onWishlistInput(this.value)" onkeydown="handleWishlistKey(event)"><div id="wishlistSuggestions" class="wishlist-suggestions"></div></div><button class="primary" onclick="addWishlistByName(document.getElementById('wishlistInput').value)">Add</button></div>${items}</div></div></div>`;
 }
 document.addEventListener('keydown',e=>{
   if((e.key==='h'||e.key==='H')&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){

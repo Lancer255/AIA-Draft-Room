@@ -10,6 +10,17 @@
 .wishlist-add{display:flex;gap:4px;margin-bottom:5px}
 .wishlist-add input{padding:5px 6px;font-size:10px}
 .wishlist-add button{padding:5px 7px}
+
+.wishlist-search-shell{position:relative;flex:1;min-width:0}
+.wishlist-search-shell input{width:100%}
+.wishlist-suggestions{display:none;position:absolute;left:0;right:0;top:calc(100% + 3px);z-index:30;background:#fff;border:1px solid #d8c982;border-radius:6px;box-shadow:0 8px 18px rgba(0,0,0,.16);max-height:220px;overflow:auto}
+.wishlist-suggestions.open{display:block}
+.wishlist-suggestion{width:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;border-radius:0;background:#fff;padding:7px 8px;text-align:left;border-bottom:1px solid #eee7cb;font-size:10px}
+.wishlist-suggestion:last-child{border-bottom:0}
+.wishlist-suggestion:hover,.wishlist-suggestion:focus{background:#fff7d2;outline:none}
+.wishlist-suggestion-name{font-weight:900;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wishlist-suggestion-meta{display:flex;align-items:center;gap:3px;color:var(--muted);white-space:nowrap;font-size:9px}
+.wishlist-suggestion .pos{min-width:24px;padding:2px 3px;font-size:8px}
 .wishlist-item{display:grid;grid-template-columns:18px minmax(0,1fr) 22px;gap:4px;align-items:center;padding:4px 0;border-bottom:1px solid #eee7cb;font-size:10px}
 .wishlist-item:last-child{border-bottom:0}
 .wishlist-rank{font-weight:900;color:#8c6b00;text-align:center}

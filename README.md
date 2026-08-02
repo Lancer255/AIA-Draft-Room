@@ -43,3 +43,9 @@ Draft state and wishlist are saved in the browser using localStorage.
 - Fixed wishlist heart buttons for player names containing apostrophes or special characters.
 - Wishlist additions now use safe player indexes and normalized name matching.
 - Drafted players cannot be re-added to the wishlist.
+
+
+## Version 3.3
+- Wishlist search now autocompletes from the current Available Players pool.
+- Suggestions update while typing and exclude drafted players automatically.
+- Selecting a suggestion adds the exact matching player.
