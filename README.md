@@ -59,3 +59,11 @@ Draft state and wishlist are saved in the browser using localStorage.
 - Preserved wishlist autocomplete.
 - Preserved automatic wishlist removal when a player is drafted.
 - Preserved safe heart-button player references.
+
+
+## Version 3.8 — MJIJX Needs
+- Added spacing below the wishlist so the MJIJX Needs card starts lower.
+- Added a full-width Bench tile showing 0/8 through 8/8.
+- Added Roster X/17 and Picks Remaining.
+- Need tiles now show empty (white), partial (gold), or filled (green).
+- No changes to the Decision Center, Radar logic, wishlist, draft board, or player data.
