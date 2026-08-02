@@ -1,4 +1,4 @@
-# AIA Draft Room 3.0
+# AIA Draft Room 3.1
 
 GitHub Pages-ready version of the Always In Action fantasy football draft room.
 
@@ -33,3 +33,13 @@ GitHub Pages-ready version of the Always In Action fantasy football draft room.
 - `data/draft.json` — 17-round snake draft order
 
 Draft state and wishlist are saved in the browser using localStorage.
+
+## Version 3.1
+- Drafted players are automatically removed from My Wishlist.
+- Undo restores a player to the wishlist when the player was on it before being drafted.
+
+
+## Version 3.2
+- Fixed wishlist heart buttons for player names containing apostrophes or special characters.
+- Wishlist additions now use safe player indexes and normalized name matching.
+- Drafted players cannot be re-added to the wishlist.
