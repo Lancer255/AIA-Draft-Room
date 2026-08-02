@@ -49,3 +49,14 @@ Draft state and wishlist are saved in the browser using localStorage.
 - Wishlist search now autocompletes from the current Available Players pool.
 - Suggestions update while typing and exclude drafted players automatically.
 - Selecting a suggestion adds the exact matching player.
+
+
+## Version 3.4
+- Moved Draft Radar / Decision Center label into the upper-right blue command bar.
+- Removed the redundant right-panel header to create more vertical room.
+
+
+## Version 3.5
+- Undo now asks “Are you sure?” and displays explicit Yes/No buttons.
+- Reset now asks “Are you sure?” and displays explicit Yes/No buttons.
+- No receives keyboard focus by default; Escape closes the confirmation.
