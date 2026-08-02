@@ -56,7 +56,8 @@ Draft state and wishlist are saved in the browser using localStorage.
 - Removed the redundant right-panel header to create more vertical room.
 
 
-## Version 3.5
-- Undo now asks “Are you sure?” and displays explicit Yes/No buttons.
-- Reset now asks “Are you sure?” and displays explicit Yes/No buttons.
-- No receives keyboard focus by default; Escape closes the confirmation.
+## Version 3.6 Stable
+- Restored the Version 3.4 Decision Center and Radar rendering.
+- Added isolated Yes/No confirmation dialogs for Undo and Reset.
+- Undo returns the player to Available Players and restores the wishlist entry when applicable.
+- No changes were made to recommendation, radar, market-watch, or projected-return rendering.
