@@ -1,0 +1,21 @@
+{
+  "leagueName": "Always In Action",
+  "season": 2026,
+  "draftDate": "2026-08-25",
+  "teams": 12,
+  "rounds": 17,
+  "rosterSize": 17,
+  "starters": {
+    "QB": 1,
+    "RB": 2,
+    "WR": 3,
+    "TE": 1,
+    "KR": 1,
+    "DE": 1
+  },
+  "keeperEligibleRounds": {
+    "start": 10,
+    "end": 17
+  },
+  "userTeam": "MJIJX"
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "team": "Bo Jackson's Hip",
+    "abbr": "BO",
+    "type": "Sharp"
+  },
+  {
+    "team": "Jersey Boyz",
+    "abbr": "JB",
+    "type": "Square"
+  },
+  {
+    "team": "Kittle Bit of Bijan",
+    "abbr": "KB",
+    "type": "App"
+  },
+  {
+    "team": "Gator",
+    "abbr": "GAT",
+    "type": "Semi"
+  },
+  {
+    "team": "Damangs",
+    "abbr": "DM",
+    "type": "In-season"
+  },
+  {
+    "team": "Squabos",
+    "abbr": "SQ",
+    "type": "Upside"
+  },
+  {
+    "team": "Easy Money",
+    "abbr": "EZ",
+    "type": "Semi"
+  },
+  {
+    "team": "The Pimps",
+    "abbr": "PIM",
+    "type": "Sharp"
+  },
+  {
+    "team": "Taco Tuesday",
+    "abbr": "TACO",
+    "type": "Sharp"
+  },
+  {
+    "team": "BSK",
+    "abbr": "BSK",
+    "type": "Sleeper"
+  },
+  {
+    "team": "MJIJX",
+    "abbr": "MJIJX",
+    "type": "You"
+  },
+  {
+    "team": "The Franchise",
+    "abbr": "FRAN",
+    "type": "Square"
+  }
+]
