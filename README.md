@@ -67,3 +67,11 @@ Draft state and wishlist are saved in the browser using localStorage.
 - Added Roster X/17 and Picks Remaining.
 - Need tiles now show empty (white), partial (gold), or filled (green).
 - No changes to the Decision Center, Radar logic, wishlist, draft board, or player data.
+
+
+## Version 3.9 — Wishlist Expansion
+- Removed the wishlist's internal scrollbar.
+- The visible wishlist now expands naturally to display every saved player.
+- MJIJX Needs and the rest of the right panel move down automatically as the list grows.
+- When hidden, the wishlist collapses to its header row only.
+- No changes were made to draft logic, Radar, Decision Center, team rosters, or MJIJX Needs calculations.
