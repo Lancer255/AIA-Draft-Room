@@ -6,7 +6,7 @@
 .wishlist-head{display:flex;align-items:center;justify-content:space-between;gap:5px;padding:6px 7px;background:#f6edc7;border-bottom:1px solid #e2d39a;font-size:11px;font-weight:900;color:var(--dark)}
 .wishlist-actions{display:flex;gap:4px}
 .wishlist-actions button{padding:4px 6px;font-size:9px}
-.wishlist-body{padding:6px 7px;overflow:visible;}
+.wishlist-body{padding:6px 7px;max-height:130px;overflow:auto}
 .wishlist-add{display:flex;gap:4px;margin-bottom:5px}
 .wishlist-add input{padding:5px 6px;font-size:10px}
 .wishlist-add button{padding:5px 7px}
@@ -34,8 +34,9 @@
 .load-error{margin:40px auto;max-width:680px;background:#fff;border:1px solid var(--border);border-radius:10px;padding:22px;box-shadow:0 8px 30px rgba(0,0,0,.08)}
 .load-error h2{margin:0 0 8px;color:#a93a45}.load-error code{background:#f2f4f7;padding:2px 5px;border-radius:4px}
 
-.wishlist-body{max-height:none!important;overflow:visible!important}
-
-.wishlist-card.is-hidden .wishlist-hidden{display:none}
-.wishlist-card.is-hidden{background:#fffdf2}
-.wishlist-card.is-hidden .wishlist-head{border-bottom:0}
+/* Version 3.9.1: wishlist and intelligence share one right-column scroll area */
+.right-panel{grid-template-rows:36px minmax(0,1fr)}
+.right-panel-scroll{min-height:0;overflow-y:auto;overflow-x:hidden}
+.right-panel .wishlist-body{max-height:none!important;overflow:visible!important}
+.right-panel .war{overflow:visible!important;min-height:auto;padding:22px 10px 10px}
+.right-panel .wishlist-card.is-hidden .wishlist-head{border-bottom:0}

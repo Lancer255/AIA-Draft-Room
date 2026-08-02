@@ -69,9 +69,11 @@ Draft state and wishlist are saved in the browser using localStorage.
 - No changes to the Decision Center, Radar logic, wishlist, draft board, or player data.
 
 
-## Version 3.9 — Wishlist Expansion
+## Version 3.9.1 — Wishlist Shared Scroll Fix
+- Rebuilt from the stable Version 3.8 release.
 - Removed the wishlist's internal scrollbar.
-- The visible wishlist now expands naturally to display every saved player.
-- MJIJX Needs and the rest of the right panel move down automatically as the list grows.
-- When hidden, the wishlist collapses to its header row only.
-- No changes were made to draft logic, Radar, Decision Center, team rosters, or MJIJX Needs calculations.
+- The wishlist expands to show its complete player list.
+- Wishlist, MJIJX Needs, Radar, and Decision Center now share one right-column scrollbar.
+- MJIJX Needs moves down naturally as the wishlist grows.
+- Hidden wishlist collapses to its header row only.
+- No draft, roster, recommendation, or market logic was changed.
