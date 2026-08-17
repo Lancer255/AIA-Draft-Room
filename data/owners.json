@@ -2,61 +2,116 @@
   {
     "team": "Bo Jackson's Hip",
     "abbr": "BO",
-    "type": "Sharp"
+    "manager": "Mike Price",
+    "aliases": [
+      "Bo Jackson's Hip"
+    ],
+    "active": true
   },
   {
     "team": "Jersey Boyz",
     "abbr": "JB",
-    "type": "Square"
+    "manager": "Tom Verratti",
+    "aliases": [
+      "Jersey Boyz",
+      "Flying High"
+    ],
+    "active": true
   },
   {
     "team": "Kittle Bit of Bijan",
     "abbr": "KB",
-    "type": "App"
+    "manager": "Danny Ferraiolo",
+    "aliases": [
+      "Kittle Bit of Bijan",
+      "Pog Mo Thon",
+      "Pog Mo Thoin",
+      "pog mo thon",
+      "pog mo thoin"
+    ],
+    "active": true
   },
   {
     "team": "Gator",
     "abbr": "GAT",
-    "type": "Semi"
+    "manager": "Joe Fritz",
+    "aliases": [
+      "Gator"
+    ],
+    "active": true
   },
   {
     "team": "Damangs",
     "abbr": "DM",
-    "type": "In-season"
+    "manager": "Rob Fung",
+    "aliases": [
+      "Damangs",
+      "DaMangs"
+    ],
+    "active": true
   },
   {
     "team": "Squabos",
     "abbr": "SQ",
-    "type": "Upside"
+    "manager": "Pedro Gomes",
+    "aliases": [
+      "Squabos"
+    ],
+    "active": true
   },
   {
     "team": "Easy Money",
     "abbr": "EZ",
-    "type": "Semi"
+    "manager": "Joseph Scavetti",
+    "aliases": [
+      "Easy Money"
+    ],
+    "active": true
   },
   {
     "team": "The Pimps",
     "abbr": "PIM",
-    "type": "Sharp"
+    "manager": "Rocco Luciano",
+    "aliases": [
+      "The Pimps"
+    ],
+    "active": true
   },
   {
     "team": "Taco Tuesday",
     "abbr": "TACO",
-    "type": "Sharp"
+    "manager": "Mike Esfahani",
+    "aliases": [
+      "Taco Tuesday"
+    ],
+    "active": true
   },
   {
     "team": "BSK",
     "abbr": "BSK",
-    "type": "Sleeper"
+    "manager": "Paul Pereira",
+    "aliases": [
+      "BSK"
+    ],
+    "active": true
   },
   {
     "team": "MJIJX",
     "abbr": "MJIJX",
-    "type": "You"
+    "manager": "James Juliano",
+    "aliases": [
+      "MJIJX",
+      "MjIjX"
+    ],
+    "active": true
   },
   {
     "team": "The Franchise",
     "abbr": "FRAN",
-    "type": "Square"
+    "manager": "Mike Durso",
+    "aliases": [
+      "The Franchise"
+    ],
+    "active": true
   }
 ]
