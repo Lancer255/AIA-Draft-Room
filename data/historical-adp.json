@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "source": "FantasyPros historical overall ADP files supplied by user",
+    "baselineField": "AVG",
+    "usableSeasons": [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+    "unusableSeasons": {
+      "2017": "The supplied file contains the FantasyPros report-unavailable message rather than rankings."
+    },
+    "purpose": [
+      "measure owner reach/value versus same-season ADP",
+      "identify position-specific reaches",
+      "measure how closely each owner follows the market board",
+      "support 2026 Owner DNA and pick-probability modeling"
+    ],
+    "status": "historical source files verified; row-level bulk import is the next data step"
+  }
+}
