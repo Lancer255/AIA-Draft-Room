@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "basis": "2012-2025 AIA draft history, 2018-2025 FantasyPros ADP, and commissioner scouting notes",
+  "profiles": {
+    "Bo Jackson's Hip": {"manager":"Mike Price","label":"Sharp","confidence":0.78,"adpWeight":0.72,"needWeight":0.82,"risk":0.12,"valueDiscipline":0.18,"notes":["Disciplined early","Historical early-round ADP deviation about 4.9 picks"]},
+    "Jersey Boyz": {"manager":"Tom Verratti","label":"Square / ADP","confidence":0.86,"adpWeight":0.86,"needWeight":0.74,"risk":0.05,"square":true,"notes":["Follows ADP","Formerly Flying High","Historical early-round ADP deviation about 9 picks"]},
+    "Kittle Bit of Bijan": {"manager":"Danny Ferraiolo","label":"Square / ADP","confidence":0.84,"adpWeight":0.82,"needWeight":0.76,"risk":0.06,"square":true,"notes":["Follows consensus","Formerly Pog Mo Thon","About 52% of matched picks within 10 ADP spots"]},
+    "Gator": {"manager":"Joe Fritz","label":"Balanced / Independent","confidence":0.74,"adpWeight":0.58,"needWeight":0.78,"risk":0.22,"notes":["Will deviate from ADP early","Becomes position/roster driven later","Round-aware weights"]},
+    "Damangs": {"manager":"Rob Fung","label":"Semi-Sharp / TE","confidence":0.82,"adpWeight":0.66,"needWeight":0.80,"risk":0.14,"notes":["Tends to draft TE early","Historical first TE about Round 3.7"]},
+    "Squabos": {"manager":"Pedro Gomes","label":"Risk / Upside","confidence":0.88,"adpWeight":0.38,"needWeight":0.70,"risk":0.72,"notes":["Risk taker","Rookie/upside friendly","Waits on QB","Historical QB1 about Round 9.5","About 39% of matched picks were 20+ spots ahead of ADP"]},
+    "Easy Money": {"manager":"Joseph Scavetti","label":"Square / ADP","confidence":0.76,"adpWeight":0.76,"needWeight":0.78,"risk":0.08,"square":true,"notes":["Consensus oriented","More variable later in draft"]},
+    "The Pimps": {"manager":"Rocco Luciano","label":"Risk / Contrarian","confidence":0.82,"adpWeight":0.44,"needWeight":0.74,"risk":0.58,"favoriteNFLTeam":"PHI","favoriteTeamBonus":18,"notes":["Will zag","Recent early-QB tendency","Likes Eagles players","Average matched pick about 8.8 spots ahead of ADP"]},
+    "Taco Tuesday": {"manager":"Mike Esfahani","label":"Sharp / Disciplined","confidence":0.82,"adpWeight":0.80,"needWeight":0.84,"risk":0.12,"valueDiscipline":0.20,"notes":["Sharp","Historical early-round ADP deviation about 3.7 picks"]},
+    "BSK": {"manager":"Paul Pereira","label":"Risk / RB Upside","confidence":0.82,"adpWeight":0.40,"needWeight":0.72,"risk":0.68,"notes":["Risk taker","Will take backup RBs early","About 39% of matched picks were 20+ spots ahead of ADP"]},
+    "MJIJX": {"manager":"James Juliano","label":"Decision Team","confidence":1.0,"adpWeight":0.56,"needWeight":0.90,"risk":0.35,"notes":["User team; do not predict as opponent","ADP-aware early, conviction-driven later"]},
+    "The Franchise": {"manager":"Mike Durso","label":"Square / Dallas","confidence":0.88,"adpWeight":0.86,"needWeight":0.76,"risk":0.05,"square":true,"favoriteNFLTeam":"DAL","favoriteTeamBonus":18,"notes":["Follows ADP","Likes Dallas players","Historical early-round ADP deviation about 5.6 picks"]}
+  }
+}
