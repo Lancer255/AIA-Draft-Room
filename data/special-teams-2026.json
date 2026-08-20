@@ -1,0 +1,450 @@
+[
+  {
+    "rank": 134.0,
+    "name": "Brandon Aubrey",
+    "team": "DAL",
+    "pos": "K",
+    "posRank": "K1",
+    "value": 0
+  },
+  {
+    "rank": 142.5,
+    "name": "Houston Texans DST",
+    "team": "HOU",
+    "pos": "DST",
+    "posRank": "DST1",
+    "value": 0
+  },
+  {
+    "rank": 144.0,
+    "name": "Los Angeles Rams DST",
+    "team": "LAR",
+    "pos": "DST",
+    "posRank": "DST2",
+    "value": 0
+  },
+  {
+    "rank": 152.5,
+    "name": "Seattle Seahawks DST",
+    "team": "SEA",
+    "pos": "DST",
+    "posRank": "DST3",
+    "value": 0
+  },
+  {
+    "rank": 158.5,
+    "name": "Denver Broncos DST",
+    "team": "DEN",
+    "pos": "DST",
+    "posRank": "DST4",
+    "value": 0
+  },
+  {
+    "rank": 161.5,
+    "name": "Cameron Dicker",
+    "team": "LAC",
+    "pos": "K",
+    "posRank": "K2",
+    "value": 0
+  },
+  {
+    "rank": 162.0,
+    "name": "Philadelphia Eagles DST",
+    "team": "PHI",
+    "pos": "DST",
+    "posRank": "DST5",
+    "value": 0
+  },
+  {
+    "rank": 170.5,
+    "name": "Jason Myers",
+    "team": "SEA",
+    "pos": "K",
+    "posRank": "K3",
+    "value": 0
+  },
+  {
+    "rank": 182.0,
+    "name": "New England Patriots DST",
+    "team": "NE",
+    "pos": "DST",
+    "posRank": "DST6",
+    "value": 0
+  },
+  {
+    "rank": 184.0,
+    "name": "Ka'imi Fairbairn",
+    "team": "HOU",
+    "pos": "K",
+    "posRank": "K4",
+    "value": 0
+  },
+  {
+    "rank": 184.0,
+    "name": "Cam Little",
+    "team": "JAC",
+    "pos": "K",
+    "posRank": "K5",
+    "value": 0
+  },
+  {
+    "rank": 191.5,
+    "name": "Minnesota Vikings DST",
+    "team": "MIN",
+    "pos": "DST",
+    "posRank": "DST7",
+    "value": 0
+  },
+  {
+    "rank": 193.0,
+    "name": "Tyler Loop",
+    "team": "BAL",
+    "pos": "K",
+    "posRank": "K6",
+    "value": 0
+  },
+  {
+    "rank": 197.0,
+    "name": "Harrison Mevis",
+    "team": "LAR",
+    "pos": "K",
+    "posRank": "K7",
+    "value": 0
+  },
+  {
+    "rank": 202.0,
+    "name": "Baltimore Ravens DST",
+    "team": "BAL",
+    "pos": "DST",
+    "posRank": "DST8",
+    "value": 0
+  },
+  {
+    "rank": 206.5,
+    "name": "Jacksonville Jaguars DST",
+    "team": "JAC",
+    "pos": "DST",
+    "posRank": "DST9",
+    "value": 0
+  },
+  {
+    "rank": 209.0,
+    "name": "Jake Bates",
+    "team": "DET",
+    "pos": "K",
+    "posRank": "K8",
+    "value": 0
+  },
+  {
+    "rank": 202.0,
+    "name": "Pittsburgh Steelers DST",
+    "team": "PIT",
+    "pos": "DST",
+    "posRank": "DST10",
+    "value": 0
+  },
+  {
+    "rank": 214.0,
+    "name": "Andy Borregales",
+    "team": "NE",
+    "pos": "K",
+    "posRank": "K9",
+    "value": 0
+  },
+  {
+    "rank": 213.5,
+    "name": "Pittsburgh Steelers DST",
+    "team": "PIT",
+    "pos": "DST",
+    "posRank": "DST10",
+    "value": 0
+  },
+  {
+    "rank": 221.0,
+    "name": "Harrison Butker",
+    "team": "KC",
+    "pos": "K",
+    "posRank": "K10",
+    "value": 0
+  },
+  {
+    "rank": 228.0,
+    "name": "Los Angeles Chargers DST",
+    "team": "LAC",
+    "pos": "DST",
+    "posRank": "DST11",
+    "value": 0
+  },
+  {
+    "rank": 226.5,
+    "name": "Chris Boswell",
+    "team": "PIT",
+    "pos": "K",
+    "posRank": "K11",
+    "value": 0
+  },
+  {
+    "rank": 228.0,
+    "name": "Eddy Pineiro",
+    "team": "SF",
+    "pos": "K",
+    "posRank": "K12",
+    "value": 0
+  },
+  {
+    "rank": 230.5,
+    "name": "Detroit Lions DST",
+    "team": "DET",
+    "pos": "DST",
+    "posRank": "DST12",
+    "value": 0
+  },
+  {
+    "rank": 233.5,
+    "name": "Will Reichard",
+    "team": "MIN",
+    "pos": "K",
+    "posRank": "K13",
+    "value": 0
+  },
+  {
+    "rank": 240.5,
+    "name": "Green Bay Packers DST",
+    "team": "GB",
+    "pos": "DST",
+    "posRank": "DST13",
+    "value": 0
+  },
+  {
+    "rank": 242.5,
+    "name": "Wil Lutz",
+    "team": "DEN",
+    "pos": "K",
+    "posRank": "K14",
+    "value": 0
+  },
+  {
+    "rank": 246.0,
+    "name": "New York Giants DST",
+    "team": "NYG",
+    "pos": "DST",
+    "posRank": "DST14",
+    "value": 0
+  },
+  {
+    "rank": 248.0,
+    "name": "Dallas Cowboys DST",
+    "team": "DAL",
+    "pos": "DST",
+    "posRank": "DST15",
+    "value": 0
+  },
+  {
+    "rank": 249.0,
+    "name": "Chase McLaughlin",
+    "team": "TB",
+    "pos": "K",
+    "posRank": "K15",
+    "value": 0
+  },
+  {
+    "rank": 255.0,
+    "name": "Cairo Santos",
+    "team": "CHI",
+    "pos": "K",
+    "posRank": "K16",
+    "value": 0
+  },
+  {
+    "rank": 259.0,
+    "name": "Kansas City Chiefs DST",
+    "team": "KC",
+    "pos": "DST",
+    "posRank": "DST16",
+    "value": 0
+  },
+  {
+    "rank": 261.0,
+    "name": "Buffalo Bills DST",
+    "team": "BUF",
+    "pos": "DST",
+    "posRank": "DST17",
+    "value": 0
+  },
+  {
+    "rank": 269.5,
+    "name": "Evan McPherson",
+    "team": "CIN",
+    "pos": "K",
+    "posRank": "K17",
+    "value": 0
+  },
+  {
+    "rank": 270.0,
+    "name": "Chicago Bears DST",
+    "team": "CHI",
+    "pos": "DST",
+    "posRank": "DST18",
+    "value": 0
+  },
+  {
+    "rank": 270.5,
+    "name": "Jake Elliott",
+    "team": "PHI",
+    "pos": "K",
+    "posRank": "K18",
+    "value": 0
+  },
+  {
+    "rank": 272.0,
+    "name": "San Francisco 49ers DST",
+    "team": "SF",
+    "pos": "DST",
+    "posRank": "DST19",
+    "value": 0
+  },
+  {
+    "rank": 273.0,
+    "name": "Indianapolis Colts DST",
+    "team": "IND",
+    "pos": "DST",
+    "posRank": "DST22",
+    "value": 0
+  },
+  {
+    "rank": 275.0,
+    "name": "Charlie Smyth",
+    "team": "NO",
+    "pos": "K",
+    "posRank": "K19",
+    "value": 0
+  },
+  {
+    "rank": 275.0,
+    "name": "Atlanta Falcons DST",
+    "team": "ATL",
+    "pos": "DST",
+    "posRank": "DST23",
+    "value": 0
+  },
+  {
+    "rank": 278.0,
+    "name": "Tampa Bay Buccaneers DST",
+    "team": "TB",
+    "pos": "DST",
+    "posRank": "DST24",
+    "value": 0
+  },
+  {
+    "rank": 279.0,
+    "name": "Cleveland Browns DST",
+    "team": "CLE",
+    "pos": "DST",
+    "posRank": "DST20",
+    "value": 0
+  },
+  {
+    "rank": 280.5,
+    "name": "New Orleans Saints DST",
+    "team": "NO",
+    "pos": "DST",
+    "posRank": "DST21",
+    "value": 0
+  },
+  {
+    "rank": 281.0,
+    "name": "Carolina Panthers DST",
+    "team": "CAR",
+    "pos": "DST",
+    "posRank": "DST26",
+    "value": 0
+  },
+  {
+    "rank": 282.0,
+    "name": "Cincinnati Bengals DST",
+    "team": "CIN",
+    "pos": "DST",
+    "posRank": "DST27",
+    "value": 0
+  },
+  {
+    "rank": 283.5,
+    "name": "Tyler Bass",
+    "team": "BUF",
+    "pos": "K",
+    "posRank": "K20",
+    "value": 0
+  },
+  {
+    "rank": 277.0,
+    "name": "Trey Smack",
+    "team": "GB",
+    "pos": "K",
+    "posRank": "K21",
+    "value": 0
+  },
+  {
+    "rank": 288.0,
+    "name": "Tennessee Titans DST",
+    "team": "TEN",
+    "pos": "DST",
+    "posRank": "DST25",
+    "value": 0
+  },
+  {
+    "rank": 284.0,
+    "name": "Matt Gay",
+    "team": "LV",
+    "pos": "K",
+    "posRank": "K22",
+    "value": 0
+  },
+  {
+    "rank": 286.0,
+    "name": "Riley Patterson",
+    "team": "MIA",
+    "pos": "K",
+    "posRank": "K23",
+    "value": 0
+  },
+  {
+    "rank": 289.0,
+    "name": "Nick Folk",
+    "team": "ATL",
+    "pos": "K",
+    "posRank": "K24",
+    "value": 0
+  },
+  {
+    "rank": 292.0,
+    "name": "Arizona Cardinals DST",
+    "team": "ARI",
+    "pos": "DST",
+    "posRank": "DST28",
+    "value": 0
+  },
+  {
+    "rank": 293.0,
+    "name": "Las Vegas Raiders DST",
+    "team": "LV",
+    "pos": "DST",
+    "posRank": "DST29",
+    "value": 0
+  },
+  {
+    "rank": 294.0,
+    "name": "New York Jets DST",
+    "team": "NYJ",
+    "pos": "DST",
+    "posRank": "DST30",
+    "value": 0
+  },
+  {
+    "rank": 296.0,
+    "name": "Miami Dolphins DST",
+    "team": "MIA",
+    "pos": "DST",
+    "posRank": "DST31",
+    "value": 0
+  }
+]
