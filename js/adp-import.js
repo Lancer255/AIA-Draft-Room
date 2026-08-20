@@ -22,16 +22,18 @@ function adpFindColumn(headers,names){
 }
 function adpCleanPlayer(raw){
   let s=String(raw||'').trim();
-  // FantasyPros exports may include team/bye data after the player name.
   s=s.replace(/\s+[A-Z]{2,3}\s*\(\d+\)\s*$/,'').replace(/\s*\(\d+\)\s*$/,'').trim();
   return s;
 }
 function applyAdpMap(map,meta,saveIt=true){
   if(!map||typeof map!=='object')return {matched:0,total:0};
   let matched=0;
-  const update=p=>{const r=map[adpNormalizeName(p.name)];if(Number.isFinite(Number(r))){p.rank=Number(r);matched++;}};
+  const seen=new Set();
+  const update=p=>{
+    const key=adpNormalizeName(p.name), r=map[key];
+    if(Number.isFinite(Number(r))){p.rank=Number(r);if(!seen.has(key)){seen.add(key);matched++;}}
+  };
   DATA.players.forEach(update);
-  // Keep drafted players untouched visually, but update every available player's live market rank.
   state.available.forEach(update);
   state.available.sort((a,b)=>(Number(a.rank)||999)-(Number(b.rank)||999));
   AIA_ADP_META=meta||null;
@@ -87,20 +89,32 @@ function adpStatusHtml(){
   const matched=AIA_ADP_META.matched!=null?`${AIA_ADP_META.matched} matched · `:'';
   return `<span class="small"><b>Current ADP:</b> ${matched}${AIA_ADP_META.loadedAt||''}</span>`;
 }
+function injectAdpUploader(){
+  if(document.getElementById('adpUpload'))return;
+  const panels=[...document.querySelectorAll('.panel')];
+  const availablePanel=panels.find(p=>p.querySelector('.panel-head')?.textContent?.includes('Available Players'));
+  if(!availablePanel)return;
+  const filters=availablePanel.querySelector('.filters');
+  const anchor=filters||availablePanel.querySelector('.panel-head');
+  if(!anchor)return;
+  const wrap=document.createElement('div');
+  wrap.className='adp-import-controls';
+  wrap.style.display='flex';
+  wrap.style.alignItems='center';
+  wrap.style.gap='8px';
+  wrap.style.flexWrap='wrap';
+  wrap.style.padding='8px 12px';
+  wrap.innerHTML=`<label class="primary" style="cursor:pointer;display:inline-block">Upload Current ADP<input id="adpUpload" type="file" accept=".csv,text/csv" style="display:none" onchange="importFantasyProsAdp(this)"></label><span id="adpStatus">${adpStatusHtml()}</span>${AIA_ADP_META?'<button type="button" onclick="clearCurrentAdp()">Clear ADP</button>':''}`;
+  anchor.insertAdjacentElement('afterend',wrap);
+}
 function installAdpUploader(){
   const baseRender=render;
   render=function(){
     baseRender();
-    let host=document.querySelector('.controls');
-    if(!host||document.getElementById('adpUpload'))return;
-    const wrap=document.createElement('div');
-    wrap.className='adp-import-controls';
-    wrap.innerHTML=`<label class="primary" style="cursor:pointer">Upload Current ADP<input id="adpUpload" type="file" accept=".csv,text/csv" style="display:none" onchange="importFantasyProsAdp(this)"></label><span id="adpStatus">${adpStatusHtml()}</span>${AIA_ADP_META?'<button type="button" onclick="clearCurrentAdp()">Clear ADP</button>':''}`;
-    host.appendChild(wrap);
+    injectAdpUploader();
   };
   restoreCurrentAdp();
   render();
 }
 
-// app.js is loaded first; install after all deferred scripts finish so this wrapper remains active.
 window.addEventListener('load',()=>setTimeout(installAdpUploader,0));
