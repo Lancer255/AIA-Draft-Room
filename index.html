@@ -10,6 +10,14 @@
 </head>
 <body>
   <noscript>This application requires JavaScript.</noscript>
+  <div id="adpStaticBar" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 14px;background:#f4f7fb;border-bottom:1px solid #d8e0ea;font-family:Arial,sans-serif">
+    <strong>2026 Current ADP</strong>
+    <label style="cursor:pointer;background:#005b9f;color:white;padding:7px 12px;border-radius:6px;font-weight:700;font-size:13px">
+      Upload FantasyPros CSV
+      <input id="adpUpload" type="file" accept=".csv,text/csv" style="display:none" onchange="importFantasyProsAdp(this)">
+    </label>
+    <span style="font-size:12px;color:#5b6573">Updates live Draft Room ADP only. Historical ADP stays unchanged.</span>
+  </div>
   <div id="app"><div class="load-error"><h2>Loading AIA Draft Room…</h2></div></div>
   <script src="./js/app.js" defer></script>
   <script src="./js/owner-dna.js" defer></script>
