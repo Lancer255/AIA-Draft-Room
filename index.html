@@ -10,24 +10,27 @@
 </head>
 <body>
   <noscript>This application requires JavaScript.</noscript>
-  <div id="adpStaticBar" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 14px;background:#f4f7fb;border-bottom:1px solid #d8e0ea;font-family:Arial,sans-serif">
-    <strong>2026 Current ADP</strong>
-    <label style="cursor:pointer;background:#005b9f;color:white;padding:7px 12px;border-radius:6px;font-weight:700;font-size:13px">
-      Upload FantasyPros CSV
-      <input id="adpUpload" type="file" accept=".csv,text/csv" style="display:none" onchange="importFantasyProsAdp(this)">
-    </label>
-    <span style="font-size:12px;color:#5b6573">Updates live Draft Room ADP only. Historical ADP stays unchanged.</span>
-  </div>
-  <div id="mockDraftBar" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 14px;background:#fff8e8;border-bottom:1px solid #ead9a8;font-family:Arial,sans-serif">
-    <strong>LIVE DRAFT MODE</strong>
-    <span style="font-size:12px;color:#5b6573">Loading mock controls…</span>
-  </div>
-  <div id="keeperBar" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 14px;background:#f6f2ff;border-bottom:1px solid #ddd3f2;font-family:Arial,sans-serif">
-    <strong>Keepers</strong><span style="font-size:12px;color:#5b6573">Loading keeper controls…</span>
-  </div>
-  <div id="manualPlayerBar" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 14px;background:#f7fbf7;border-bottom:1px solid #d7e5d7;font-family:Arial,sans-serif">
-    <strong>Add Missing Player</strong>
-    <span style="font-size:12px;color:#5b6573">Loading manual entry…</span>
+
+  <details id="setupTools" style="font-family:Arial,sans-serif;border-bottom:1px solid #d8e0ea;background:#f7f9fc">
+    <summary style="cursor:pointer;padding:9px 14px;font-weight:800;color:#243447;user-select:none">⚙ Draft Setup Tools <span style="font-size:12px;font-weight:400;color:#6b7280">— ADP · Keepers · Missing Players</span></summary>
+    <div id="adpStaticBar" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 14px;background:#f4f7fb;border-top:1px solid #e2e8f0">
+      <strong>2026 Current ADP</strong>
+      <label style="cursor:pointer;background:#005b9f;color:white;padding:7px 12px;border-radius:6px;font-weight:700;font-size:13px">
+        Upload FantasyPros CSV
+        <input id="adpUpload" type="file" accept=".csv,text/csv" style="display:none" onchange="importFantasyProsAdp(this)">
+      </label>
+      <span style="font-size:12px;color:#5b6573">Updates live Draft Room ADP only. Historical ADP stays unchanged.</span>
+    </div>
+    <div id="keeperBar" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 14px;background:#f6f2ff;border-top:1px solid #ddd3f2">
+      <strong>Keepers</strong><span style="font-size:12px;color:#5b6573">Loading keeper controls…</span>
+    </div>
+    <div id="manualPlayerBar" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 14px;background:#f7fbf7;border-top:1px solid #d7e5d7">
+      <strong>Add Missing Player</strong><span style="font-size:12px;color:#5b6573">Loading manual entry…</span>
+    </div>
+  </details>
+
+  <div id="mockDraftBar" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 14px;background:#fff8e8;border-bottom:1px solid #ead9a8;font-family:Arial,sans-serif">
+    <strong>LIVE DRAFT MODE</strong><span style="font-size:12px;color:#5b6573">Loading mock controls…</span>
   </div>
   <div id="app"><div class="load-error"><h2>Loading AIA Draft Room…</h2></div></div>
   <script src="./js/app.js" defer></script>
